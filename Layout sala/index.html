@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Inscrição</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        @font-face {
+            font-family: Andreas;
+            src: url(font/Andreas.ttf) format(truetype);
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fca9a9;
+            flex-direction: column;
+        }
+
+        .container {
+            width: 60%;
+            padding: 20px;
+            border: 1px solid #bab8b8;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            text-align: center;
+            margin-bottom: 20px; 
+        }
+        .container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        header, nav, section, article {
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 8px;
+            background-color: #ce7e7e;
+            color: #fcfcfc;
+            width: 100%;
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+        .tit{
+        font-family: 'Andreas', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="tit">Inscrição para a vaga</h1>
+        </header>
+        <nav>
+            <a href="#formulario">Formulário</a>
+            <a href="#artigo">Sobre</a>
+        </nav>
+
+        <section id="formulario">
+            <header>
+                <h1 class="tit">Formulário</h1>
+            </header>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="arquivo">Currículo:</label>
+                <input type="file" id="arquivo" name="arquivo">
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+        <article id="artigo">
+            <header>
+                <h1 class="tit">Sobre a Empresa</h1>
+            </header>
+            <figure>
+                <img src="font/default.webp" alt="Imagem da empresa/logo">
+                <figcaption>Imagem da empresa/logo</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam accusantium sed, 
+            quibusdam quos quaerat laboriosam doloribus a praesentium laudantium, delectus dolorum vero sequi corporis ad officiis reiciendis nulla ullam? Ipsa.</p>
+            <section>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, 
+                    voluptatem aspernatur fugit sint ex aliquam labore nisi deleniti quaerat laboriosam a reprehenderit, dicta assumenda dolorum minus fugiat! Eveniet, voluptates ipsa?</p>
+            </section>
+        </article>
+    </div>
+    <footer>
+        <p>Endereço:
+            Av. dos Bobos, 0<br>
+            Centro Empresarial<br>
+            São Paulo, SP - CEP: 01234-567<br>
+            <br>
+            <br>
+            Contato:<br>
+            Telefone: (11) 1234-5678<br>
+            E-mail: contato@empresadecidida.com.br<br>
+            <br>
+            <br>
+            Redes Sociais:<br>
+            Facebook | Instagram | LinkedIn | Twitter<br>
+            <br>
+            <br>
+            Horário de Atendimento:<br>
+            Segunda a Sexta: 00h - 00h<br>
+            Sábados: 00h - 00h<br>
+            <br>
+            <br>
+            © 2024 [Empresa]. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
